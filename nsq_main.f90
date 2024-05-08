@@ -245,6 +245,8 @@ state_ids(1) = 1
 state_ids(2) = 2
 state_ids(3) = 3
 
+! Treating 1 and 2 as separate destinations is more convenient and gives the same
+! answer as just treating 1 as a destination (within tolerance).
 dests(1) = 1
 dests(2) = 2
 dests(3) = 3
@@ -265,7 +267,7 @@ DO i = 1, n
    END DO
 END DO
 
-! Committors for optimal wavefunction to 3 are verified
+! Committors for optimal wavefunction to 1 are verified
 sigma = 0.0d0
 sigma(13,13) = 0.8658d0
 sigma(14,14) = 0.1342d0
@@ -285,7 +287,7 @@ CALL calculate_committors_by_basis(n,sigma,solved_basis,3,committors)
 WRITE(*,*) "Via brute force propagation: ", committors
 WRITE(*,*) "If those do not match within tolerance something is broken."
 
-! Committors for optimal wavefunction to 1 are verified
+! Committors for optimal wavefunction to 3 are verified
 sigma = 0.0d0
 sigma(14,14) = 0.8658d0
 sigma(13,13) = 0.1342d0

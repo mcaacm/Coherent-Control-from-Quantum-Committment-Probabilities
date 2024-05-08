@@ -173,7 +173,7 @@ DO i = 1, 50000
 END DO
 CLOSE(16)
 CLOSE(17)
-WRITE(*,*) "During optimal propogation to eigenstate 3 the following interblock fluxes were recorded: "
+WRITE(*,*) "During optimal propogation to eigenstate 1 the following interblock fluxes were recorded: "
 DO i = 1, brho%num_blocks
   WRITE(*,*) interblock_fluxes(1:brho%num_blocks,i)
 END DO
@@ -204,7 +204,7 @@ DO i = 1, 50000
 END DO
 CLOSE(16)
 CLOSE(17)
-WRITE(*,*) "During optimal propogation to eigenstate 1 the following interblock fluxes were recorded: "
+WRITE(*,*) "During optimal propogation to eigenstate 3 the following interblock fluxes were recorded: "
 DO i = 1, brho%num_blocks
   WRITE(*,*) interblock_fluxes(1:brho%num_blocks,i)
 END DO

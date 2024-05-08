@@ -1,7 +1,7 @@
 This folder contains the data for the polariton calculations. 
 The strongest coupling case (figure 1 d in the paper) is in
 'strong_coupling.' The moderate case(figure 1 c) is in
-'medium_coupling' and the weakest case (figure 1 a) is in
+'medium_coupling' and the weakest case (figure 1 b) is in
 'very_weak_coupling.'
 
 Each folder contains a plotting file 'sphere.gs' which
@@ -12,7 +12,7 @@ plots them together on a single sphere. Each also includes
 propagation files respectively, with 'nsq_main.f90' also
 solving for the committor in eigenbasis for each system
 and printing out its conclusions. Other debugging information
-is printed by these programs as well.
+is printed by these programs as well, and quite a lot of it.
 
 The 'strong_coupling' case contains a number of files titled
 'wf_#x_#y_#z.txt' which indicate that these are population
@@ -26,7 +26,7 @@ energy surafce of the system (figure 1 a) and the scripts
 to produce population plots (figure 1 e and 1 f) which 
 is 'plot_figure.gs.' There are also 'plot_ev#.txt' files
 which just have energy eigenvalues in a format convenient
-for plotting. 
+for plotting scripts to read.
 
 All three folders contain subfolders called 'confirming_plane'
 which include dynamics beginning from three different locations
