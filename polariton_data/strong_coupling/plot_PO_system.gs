@@ -68,5 +68,6 @@ unset zlabel
 
 set xlabel "{/Times-Italic R}/au"
 set ylabel "{/Times-Italic q_c}/au"
+set zlabel "{/Times-Italic E}/au"
 
 splot f(x,y)*au2ev + aon with pm3d notitle

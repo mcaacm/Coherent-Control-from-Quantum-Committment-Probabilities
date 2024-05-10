@@ -39,5 +39,8 @@ set palette defined (10 '#67001f', 20 '#b2182b',30 '#d6604d',40 '#f4a582', 50 '#
 unset xlabel
 unset ylabel
 set xyplane -0.02
+set zlabel "{/Times-Italic E}/au"
+set xlabel "{/Times-Italic Q_t}"
+set ylabel "{/Times-Italic Q_c}"
 splot f(x,y) with pm3d notitle, g(x,y) with pm3d notitle
 
